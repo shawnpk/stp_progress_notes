@@ -11,7 +11,11 @@
 
   <tbody>
     <% @progress_notes.each do |progress_note| %>
+
       <tr>
+        <td>
+          <%= progress_note.content %>
+        </td>
         <td><%= link_to 'Show', progress_note %></td>
         <td><%= link_to 'Edit', edit_progress_note_path(progress_note) %></td>
         <td><%= link_to 'Destroy', progress_note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
