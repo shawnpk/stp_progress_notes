@@ -19,8 +19,12 @@
         </div>
 
         <div class="card-footer text-right">
-          <%= link_to 'Edit', edit_progress_note_path(progress_note), class: 'btn btn-secondary btn-sm' %>
-          <%= link_to 'Destroy', progress_note, class: 'btn btn-danger btn-sm' ,method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to edit_progress_note_path(progress_note), class: 'text-secondary mr-2' do %>
+            <i class="fas fa-edit"></i>
+          <% end %>
+          <%= link_to progress_note, class: 'text-danger', method: :delete, data: { confirm: 'Are you sure you want to delete this progress note?' } do %>
+            <i class="fas fa-trash"></i>
+          <% end %>
         </div>
       </div>
     </div>
