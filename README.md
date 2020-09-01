@@ -1,24 +1,14 @@
-# README
+# SLP Notes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Models
 
-Things you may want to cover:
+- ProgressNote
 
-* Ruby version
+### Instructions
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. clone repository
+2. cd stp_progress_notes
+3. rails s
+   - yarn install --check-files if prompted
+4. rails s
+5. goto localhost:3000 in your browser
