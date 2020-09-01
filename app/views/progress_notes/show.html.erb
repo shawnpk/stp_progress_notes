@@ -1,4 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_progress_note_path(@progress_note) %> |
-<%= link_to 'Back', progress_notes_path %>
+<div class="card">
+  <div class="card-header">
+    <%= @progress_note.created_at.strftime('%B %d, %Y') %>
+  </div>
+
+  <div class="card-body">
+    <%= @progress_note.content %>
+  </div>
+
+  <div class="card-footer text-right">
+    <%= link_to progress_notes_path, class: 'text-secondary' do %>
+      <i class="fas fa-backward mr-3"></i>
+    <% end %>
+
+    <%= link_to edit_progress_note_path(@progress_note), class: 'text-dark' do %>
+      <i class="fas fa-edit"></i>
+    <% end %>
+  </div>
+</div>
