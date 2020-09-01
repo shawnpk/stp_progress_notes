@@ -1,5 +1,5 @@
-<h1>New Progress Note</h1>
+<%= link_to 'Back', progress_notes_path, class: 'btn btn-dark btn-sm mb-3' %>
+
+<h3 class='mb-4'>New Progress Note</h3>
 
 <%= render 'form', progress_note: @progress_note %>
-
-<%= link_to 'Back', progress_notes_path %>
