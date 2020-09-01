@@ -15,3 +15,4 @@
 6. If there is no data
    - stop server
    - rails db:{drop,create,migrate,seed}
+   - rails s
