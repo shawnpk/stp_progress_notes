@@ -11,4 +11,4 @@
 3. rails s
    - yarn install --check-files if prompted
 4. rails s
-5. goto localhost:3000 in your browser
+5. localhost:3000
