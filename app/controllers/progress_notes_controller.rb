@@ -55,6 +55,6 @@ class ProgressNotesController < ApplicationController
     end
 
     def progress_note_params
-      params.fetch(:progress_note, {})
+      params.require(:progress_note).permit(:content)
     end
 end
